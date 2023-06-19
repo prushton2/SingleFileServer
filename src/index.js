@@ -44,6 +44,11 @@ app.post("/update", async(req, res) => {
 
 
 app.get("/", async(req, res) => {
+    if(!checkHash(req.cookies.auth, getKey)) {
+        res.status(400);
+        res.send("Invalid Key");
+        return;
+    }
     res.status(200);
     res.send(fs.readFileSync("src/data.txt"));
 });
