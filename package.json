@@ -1,0 +1,26 @@
+{
+  "name": "singlefileserver",
+  "version": "1.0.0",
+  "description": "A backend server that uploads and stores a single text file.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prushton2/SingleFileServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prushton2/SingleFileServer/issues"
+  },
+  "homepage": "https://github.com/prushton2/SingleFileServer#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
